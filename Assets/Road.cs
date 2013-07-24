@@ -4,7 +4,8 @@ using System.Collections;
 public class Road : MonoBehaviour {
 	
 	
-	private float inicialZ;
+	public GameObject initialPosition;
+	public GameObject finalPosition;
 	
 	
 	// Use this for initialization
@@ -22,8 +23,19 @@ public class Road : MonoBehaviour {
 		
 		if( original.z<=-120 ) 
 		{
-			RoadControl.GenerateRoad();
+			RoadControl.GenerateRoad( FindChild(this.name, "JointEnd") );
 			Destroy( this.gameObject );
 		}
+	}
+	
+	
+	private GameObject FindChild(string pRoot, string pName)
+	{
+	    Transform pTransform = GameObject.Find(pRoot).GetComponent<Transform>();
+	    foreach (Transform trs in pTransform) {
+	        if (trs.gameObject.name == pName)
+	            return trs.gameObject;
+	    }
+	    return null;
 	}
 }
