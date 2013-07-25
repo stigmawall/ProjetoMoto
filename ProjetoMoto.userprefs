@@ -1,10 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\RoadControl.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Road.cs">
     <Files>
-      <File FileName="Assets\MainCamera.cs" Line="1" Column="1" />
-      <File FileName="Assets\Road.cs" Line="26" Column="65" />
-      <File FileName="Assets\RoadControl.cs" Line="8" Column="32" />
+      <File FileName="Assets\MainCamera.cs" Line="17" Column="3" />
+      <File FileName="Assets\Road.cs" Line="23" Column="16" />
+      <File FileName="Assets\RoadControl.cs" Line="1" Column="1" />
+      <File FileName="Assets\ControlRotation.js" Line="47" Column="44" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
