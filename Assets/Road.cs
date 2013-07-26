@@ -18,7 +18,7 @@ public class Road : MonoBehaviour {
 	void Update () 
 	{
 		float dist = Vector3.Distance(cam.transform.position, FindChild( this.gameObject , "JointEnd" ).transform.position );
-		Debug.Log ( this.name + " - " + dist );
+		//Debug.Log ( this.name + " - " + dist );
 		
 		if( dist < 40 ) {
 			RoadControl.GenerateRoad( FindChild( RoadControl.last, "JointEnd") );

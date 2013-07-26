@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\MainCamera.cs" />
+     <Compile Include="Assets\MotoControl.cs" />
      <Compile Include="Assets\Road.cs" />
      <Compile Include="Assets\RoadControl.cs" />
  <Reference Include="Assembly-UnityScript-firstpass">

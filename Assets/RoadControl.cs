@@ -7,7 +7,7 @@ static public class RoadControl {
 	
 	static public void GenerateRoad( GameObject point ) 
 	{
-		int random = Random.Range(1,1);
+		int random = Random.Range(1,4);
 		Object prefab = Resources.Load("Road" + random ); 
 		last = (GameObject)GameObject.Instantiate( prefab, point.transform.position, point.transform.rotation ); //Quaternion.identity );
 	}

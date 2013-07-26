@@ -55,7 +55,7 @@ function Update () {
 		);
 		newForward = ProjectOntoPlane(newForward, transform.up);
 		
-		if( newForward.x < 0.4 && newForward.x > -0.4 )
+		if( newForward.x <= 0.4 && newForward.x >= -0.4 )
 			transform.rotation = Quaternion.LookRotation(newForward, transform.up);
 	}
 	
