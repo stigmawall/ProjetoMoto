@@ -16,11 +16,11 @@ public class Road : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () 
-	{
+	{		
 		float dist = Vector3.Distance(cam.transform.position, FindChild( this.gameObject , "JointEnd" ).transform.position );
 		//Debug.Log ( this.name + " - " + dist );
 		
-		if( dist < 40 ) {
+		if( dist < 100 ) {
 			RoadControl.GenerateRoad( FindChild( RoadControl.last, "JointEnd") );
 			Destroy( this.gameObject );
 		}

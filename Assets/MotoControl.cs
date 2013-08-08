@@ -4,7 +4,7 @@ using System.Collections;
 public class MotoControl : MonoBehaviour {
 	
 	
-	public float MoveSpeed = 70;
+	public float MoveSpeed = 100;
 	public float RotateSpeed = 20;
 	
 	
